@@ -1,0 +1,21 @@
+section {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  border: 15px solid black;
+  margin: auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 20px;
+  padding: 20px; 
+  border: 5px solid blue;
+  
+
+  /* TODO: Add a margin property */
+  /* TODO: Add a padding property */
+  /* TODO: added a border property */
+}
