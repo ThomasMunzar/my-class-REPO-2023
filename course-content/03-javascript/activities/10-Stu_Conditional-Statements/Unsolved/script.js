@@ -6,14 +6,14 @@ var expression2 = (x > 50);
 
 // Write Your JavaScript Code Here
 //EVERYTHING I DID HERE IS WRONG PLEASE GO BACK AND FIX THIS THOMAS
-if (expression1 > expression2)
-    console.log("true✅  true✅ ")
+if (expression1 > expression2){
+    console.log("true✅  true✅ ")}
 
-if (expression1 == true)
-    console.log("true✅ false❌")
+if (expression1 == true){
+    console.log("true✅ false❌")}
 
-if (expression2 == false)
-    console.log("false❌ true✅")
+if (expression2 == false){
+    console.log("false❌ true✅")}
 //FIX ALL THIS THOMAS!
 
 

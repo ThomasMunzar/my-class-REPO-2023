@@ -8,7 +8,7 @@ console.log("My name is " + myName + ".");
 
 
 petAmount= 2;
-console.log("I have " + petAmount + "pets.");
+console.log("I have " + petAmount + " pets.");
 
 funFact= "I love pizza";
 console.log("Fun fact: " + funFact);
