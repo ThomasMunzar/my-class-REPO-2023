@@ -11,7 +11,7 @@ planets.splice(5)
 console.log(planets)
 //Can also use a method called POP to pop the last element off**
 
-
+// var galaxy = constellations.concat(planets); -or-  
 var galaxy = [...planets, ...constellations]
 console.log(galaxy)
 

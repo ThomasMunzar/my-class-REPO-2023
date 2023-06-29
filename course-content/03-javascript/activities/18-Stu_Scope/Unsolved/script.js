@@ -28,15 +28,16 @@ function sayTigers() {
 }
 
 // TODO: The variable 'bears' should only declared once and 'sayBears' should return "Bears! OH MY!". 
-var bears = "Bears";
+//var bears = "Bears";
 console.log(bears)
 function sayBears() {
     //var bears = "Pandas";
     
+
     console.log(bears + "! OH MY!");
     return;
-}
-
+  }
+  
 sayLions();
 sayTigers();
 sayBears(bears);
@@ -56,3 +57,4 @@ function singAlong() {
   console.log(sing);//La la la
 }
 singAlong();
+
