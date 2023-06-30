@@ -19,12 +19,12 @@ var playGame = function() {
 function promptUser(){
   var userChoice = window.prompt("Enter R, P, or S:");
   // If user pressed Cancel, immediately end function
-  if (!userChoice) {
+  if (!userChoice) { // the bang (!) function will look for a falsy value, if it sees one it will RETURN to the begining.
     return;
   }
   // Convert to uppercase to make comparisons easier
   userChoice = userChoice.toUpperCase();
-  if(userChoice !== "R" || userChoice !== "P" || userChoice !== "S"){
+  if(userChoice !== "R" || userChoice !== "P" || userChoice !== "S"){ //if userchoice is not R P or S it will prompt user to enter again.
     promptUser();
   }
   return userChoice;

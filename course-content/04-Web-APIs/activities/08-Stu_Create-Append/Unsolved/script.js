@@ -12,11 +12,16 @@ var li1 = document.createElement("li");
 var li2 = document.createElement("li");
 var li3 = document.createElement("li");
 var li4 = document.createElement("li");
+//Add textcontent
+li1.textContent="Bacon";
+li2.textContent="Salmon";
+li3.textContent="Black Berries"
+li4.textContent="Ribeye"
 
 h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
-favoriteEl.textContent = "My favorite foods are:";
+favoriteEl.textContent = "My favorite foods are: ";
 
 body.appendChild(h1El);
 body.appendChild(infoEl);
@@ -24,6 +29,10 @@ infoEl.appendChild(imgEl);
 infoEl.appendChild(kittenEl);
 infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
+favoriteEl.appendChild(li1);
+favoriteEl.appendChild(li2);
+favoriteEl.appendChild(li3);
+favoriteEl.appendChild(li4);
 // Append ordered list 
 favoriteEl.appendChild(listEl);
 
@@ -34,6 +43,11 @@ infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 imgEl.setAttribute("src", "http://placekitten.com/200/300");
 nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
-favoriteEl.setAttribute("style", "font-size:20px;");
+favoriteEl.setAttribute("style", "font-size:20px; padding:20px" );
+
+//can create a for statement
+for (var i=0, i<listEl.children.length)
+listEl.children[i].setAttribute"style", "background color:#33333;)
 
 // TODO: Add ordered list items containing four favorite foods
+
