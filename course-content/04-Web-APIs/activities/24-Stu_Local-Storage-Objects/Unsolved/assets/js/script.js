@@ -7,10 +7,10 @@ var signUpButton = document.querySelector("#sign-up");
 signUpButton.addEventListener("click", function(event) {
   event.preventDefault();
   var obj ={
-    firstName: firstNameInput.value,
-    lastName: lastNameInput.value,
-    email: emailInput.value,
-    password: passwordInput.value,
+    firstName: firstNameInput.value.trim(),
+    lastName: lastNameInput.value.trim(),
+    email: emailInput.value.trim(),
+    password: passwordInput.value.trim(),
     
 
   }

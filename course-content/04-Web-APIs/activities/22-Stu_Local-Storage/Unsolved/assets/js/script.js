@@ -33,7 +33,11 @@ signUpButton.addEventListener("click", function(event) {
 
   // TODO: Save email and password to localStorage and render the last registered user
 localStorage.setItem("email", email);
-localStorage.setItem("password", password)
+localStorage.setItem("password", password);
+renderLastRegistered()// THIS IS THE FUNCT. i was missing and whu name was showing up on page
+if (!email || !password){
+  return;
+}
   
   }
 });

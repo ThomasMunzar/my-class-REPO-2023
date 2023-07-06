@@ -26,12 +26,12 @@ function renderTodos() {
     button.textContent = "Complete ✔️";
 
     li.appendChild(button);
-    todoList.appendChild(li);
+    todoList.appendChild(li);// button and list item will be appended to page
   }
 }
 
 // TODO: What is the purpose of the following function?
-// init can set uo temporary files to store results?? //////////????
+// init can set up temporary files to store results?? //////////????
 function init() {
   // TODO: What is the purpose of the following line of code?
   //The given line of code retrieves the value associated with the key "todos" from the localStorage 
@@ -68,9 +68,11 @@ todoForm.addEventListener("submit", function(event) {
 });
 
 // TODO: Describe the purpose of the following line of code.
+// any time you click on anything on the todo list.
 todoList.addEventListener("click", function(event) {
   var element = event.target;
   // TODO: Describe the functionality of the following `if` statement.
+  // if what you had clicked on is a button it will 
   if (element.matches("button") === true) {
     var index = element.parentElement.getAttribute("data-index");//removes item from list when clicked
     todos.splice(index, 1);

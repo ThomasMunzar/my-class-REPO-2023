@@ -4,7 +4,7 @@ container.addEventListener("click", function(event) {
   var element = event.target;
 
 if (element.matches(".box")){
-
+ //".box" need to match the class=box //event .target is where exactly in the container we clicked
 var state = element.getAttribute("data-state");
 if(state ==="hidden"){
   element.setAttribute("data-state", "visible")
