@@ -9,5 +9,6 @@ rootEl.children().children().css("background-color", "white")
 //rootEl.find('li').css('background-color', 'white')
 
 // TODO: Starting from `rootEl`, create the jQuery statement that will add "O" to block the "X" from winning
-rootEl.children().eq(1).children().eq(1).text("O")
-rootEl.children().eq(2).children().eq(2).text("O")
+rootEl.children().eq(1).children().eq(0).text("O")
+rootEl.children().eq(2).children().eq(0).text("O")
+rootEl.children().eq(3).children().eq(0).text("O")
