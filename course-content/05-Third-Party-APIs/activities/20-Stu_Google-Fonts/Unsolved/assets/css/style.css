@@ -1,0 +1,63 @@
+:root {
+  --brown: #a88f82;
+  --tan: #f5e1d5;
+  --teal: #71a8a7;
+  --lightteal: #71ec05ec;
+  --light: #f0068b;
+}
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+  font-family: 'Dancing Script', cursive;
+
+}
+
+::selection {
+  color: var(--brown);
+  background-color: var(--light);
+}
+
+.custom-navbar {
+  background-color: var(--teal);
+font-family: 'Bangers', cursive;
+}
+
+.custom-navbar a {
+  font-size: 1.5rem;
+  color: var(--lightteal);
+}
+
+.custom-navbar a:hover {
+  color: var(--light);
+}
+
+.hero {
+  background-color: var(--lightteal);
+  color: var(--teal);
+  font-family: 'Amiri', serif;
+font-family: 'Bad Script', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Noto Serif SC', serif;
+}
+
+.custom-btn {
+  background-color: var(--brown);
+  color: var(--light);
+}
+
+.custom-btn:hover {
+  background-color: var(--tan);
+  color: var(--brown);
+}
+
+.custom-card {
+  border-color: var(--teal);
+  color: var(--brown);
+}
+
+.custom-card-header {
+  background-color: var(--teal);
+  color: var(--lightteal);
+}

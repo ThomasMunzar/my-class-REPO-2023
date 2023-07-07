@@ -53,3 +53,7 @@ $(function () {
 
 // add listener   on.('click', saveFunction)
 // no need to call the start funtion 
+
+
+//         My PSeudo-Code
+// 
