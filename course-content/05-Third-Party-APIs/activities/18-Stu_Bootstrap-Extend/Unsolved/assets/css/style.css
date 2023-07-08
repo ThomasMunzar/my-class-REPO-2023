@@ -1,5 +1,5 @@
 :root {
-  --brown: #1316cdd2;
+  --brown: #057747d2;
   --tan: #be5a1b;
   --teal: #71a8a7;
   --lightteal: #d5f5f5;
@@ -7,8 +7,12 @@
 }
 
 /* Add your custom class style definitions here */
-.custom-navbar{
-  color: white;
-  background-color: var(--brown);
+.cutstom-navbar{
+  background-color: pink
+}
+
+.cutstom-navbar a{
+  font-size:;
 }
 /* HINT: Apply CSS variables using `var(--brown)` syntax as your property value */
+/* I dont know why this is not working for me */

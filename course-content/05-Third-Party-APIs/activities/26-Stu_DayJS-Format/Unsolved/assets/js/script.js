@@ -23,13 +23,23 @@ $('#3a').text(currentTime.format('hh:mm:ss'))
 
 // TODO: 4. What is the current Unix timestamp?
 
+var unixTime = dayjs().unix();
+$('#4a').text(unixTime);
 
 // TODO: 5. Parse the following Unix timestamp, 1318781876, and convert into any time/date format.
+var unixTimeStamp = dayjs.unix(1318781876).format('MMM D, YYYY, hh:mm:ss a')
+$('#5a').text(unixTimeStamp)
 
 
 // TODO: 6. What is the difference in days between May 4, 2027 and today? Hint:
 // You can display the difference between two dayjs objects by using the dayjs
 // diff method.)
+
+var difDate = dayjs('2027-05-04')
+var today = dayjs();
+var days = difDate.diff(today, 'day')
+$('#6a').text(days);
+
 
 // dayjs object for May 4, 2027
 
