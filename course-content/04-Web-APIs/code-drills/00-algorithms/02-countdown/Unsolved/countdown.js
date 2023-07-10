@@ -2,8 +2,8 @@
 // You may assume `num` will be a positive number
 
 var countdown = function(num) {
-    for (i=0; i<=num; i--){
-        console.log(i)
+    for (var i=num; i>=1; i--){
+        console.log(i);
     }
 };
-countdown(10)
+countdown(10);

@@ -5,17 +5,21 @@
 console.log("==================== Question 01 ====================");
 // Create an interval that console logs "Question 01" every 5 seconds
 
-
+var question01 = setInterval(function(){
+    console.log("Question-1")
+},5000)
 
 // ------------------------------------------------------------------
 console.log("==================== Question 02 ====================");
 // Create an interval that creates an alert that says "Question 02" every 10 seconds
 
-
+var question02 = setInterval(function(){
+    console.log("Question-2")
+}, 10000)
 
 // Clear the interval you made in this question
 
-
+clearInterval(question02)
 
 // ------------------------------------------------------------------
 console.log("==================== Question 03 ====================");

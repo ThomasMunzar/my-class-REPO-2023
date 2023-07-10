@@ -11,4 +11,4 @@ var logEvenNums = function(num) {
 
 }};
 
-logEvenNums(200);
+logEvenNums(20);
