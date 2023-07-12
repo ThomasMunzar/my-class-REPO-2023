@@ -19,7 +19,7 @@ var bool = false;
 function fun(arg) {
 
   //Your answer in the console.log()
-  console.log();
+  console.log(arg ? "Yea, its true" : "Nah, its false");
 }
 
 fun(bool) 
@@ -36,8 +36,11 @@ fun(bool)
 //Call your canYouBall function, passing in the likesBasketball variable (if you're having trouble remembering what this means, refer to line 25 above). 
 
 // ==============================================================
-
- 
+var likesBasketball = true;
+function canYouBall(arg){
+  console.log(arg ? "Welcome to the warriors" : "Its okay, theres always code :)")
+}
+ canYouBall(likesBasketball)
 // ========================= QUESTION 3 =========================
 // In this exercise, make a function which takes in an argument (very similar to the past two questions). If the argument is true, console.log("I exist"). If the argument is false, console.log("Nobody's home").
 
