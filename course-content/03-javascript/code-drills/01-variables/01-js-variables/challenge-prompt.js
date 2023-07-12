@@ -20,52 +20,47 @@ meaning that any code commented out is ignored.
 // Create a variable named `subject` without giving it a value:
 // example: var hobby;
 
-var subject;
+var hobby;
 
 // Assign a value of "Programmers" to the variable `subject`
 // example: hobby = "problem solving"
 
-subject = "Programmers"
+hobby = "Cooking"
 
 // Create a variable `firstName` and assign it a value of an empty string.
 // example: var emptyString = "";
 
-var firstName = "";
+var firstName = ""
 
 // Assign a value of "Ada" to the variable `firstName`
 
-firstName= "Ada"
+firstName= "Thomas";
 // Create a variable `lastName` and assign it a value of a string "Lovelace".
 
 var lastName;
-lastName = "Lovelace"
+lastName = "Munzar";
 
 // Create a variable `fullName` and assign it a value of `firstName` and `lastName` concatenated together with a space between them.
 
 var fullName;
-fullName = "'firstName' 'Fullname'"
+fullName = firstName +  " " + lastName;
 
 // Create a variable `profession` and assign it a value of a string, "Computer Programmer".
 
-var profession;
-profession= "Computer Programmer"
+var profession = "Computer Programmer";
 
 // Create a variable `knownFor` and assign it a value of a string, "first computer programmer".
 
-var knownFor;
-knownFor= "first computer programmer"
+var knownFor = "first computer programmer";
 
 // Create a variable `firstAlgorithm` and assign it a value of a string, "Analytical Engine".
-var firstAlgorithm;
-firstAlgorithm="Analytical Engine"
+var firstAlgorithm = "Analytical Engine";
 
 // Create a variable `cityLocation` and assign it a value of a string, "London";
-var cityLocation;
-cityLocation="London"
+var cityLocation= "London";
 
 // Create a variable `countryLocation` and assign it a value of a string, "England";
-var countryLocation;
-countryLocation="England"
+var countryLocation = "England";
 
 // Create a variable `nationality` and assign it a value of a string, "British";
 var nationality;
@@ -115,6 +110,8 @@ console.log("Birth year " + birthYear);
 //Topic: Concat Values
 
 // Create a variable `statementOne` and assign it a value of a string:
+var statementOne;
+statementOne="Hello world!"
 // "Programmers: Ada Lovelace is a British Computer Programmer born in 1815."
 //
 // Use the `subject`, `fullName`, `nationality`, `profession`, and `birthYear` variables instead of hard coding in the full string

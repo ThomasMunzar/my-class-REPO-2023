@@ -2,6 +2,10 @@
 // Assume `num` will be a positive number
 
 var logNums = function(num) {
-    let num= (1, 2, 3, 4, 5);
-    console.log(num);
+    for (var i=1; i<=num; i++){
+    console.log(i)
+    
+    }
 };
+
+logNums(10)
