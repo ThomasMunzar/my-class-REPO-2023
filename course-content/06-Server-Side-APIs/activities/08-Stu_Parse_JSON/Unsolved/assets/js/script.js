@@ -15,3 +15,4 @@ fetch(requestUrl)
     }
     // TODO: Console log each issue's URL and each user's login
   });
+// (response) and  (data) can be named anything but it is GOOD practice to keep it this way

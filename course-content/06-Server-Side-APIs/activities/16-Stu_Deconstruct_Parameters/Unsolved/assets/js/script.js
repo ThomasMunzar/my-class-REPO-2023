@@ -20,4 +20,6 @@ fetch(
 
 // SORT (what to sort by) = CREATED is how the the information is SORTED , it is sorted by CREATED which is creation date. 
 
-// DIRECTION=DESC is Direction - Descending
+// DIRECTION=DESC is Direction - Descending (most recent to least recent)
+
+// query perameters change based on EACH api. do your research for each API

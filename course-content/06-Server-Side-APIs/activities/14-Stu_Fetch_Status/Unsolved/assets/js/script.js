@@ -8,6 +8,8 @@ function getApi(request) {
       // Check the console first to see the response.status
       console.log(response.status);
       if (response.status !== 200){ // !== 200 means NOT 200
+        // or- if (!response.ok)
+        // responseText.textContent="Status code :("
         responseText.textContent = response.status;
       }
       // Then write the conditional based on that response.status value
