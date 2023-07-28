@@ -1,7 +1,8 @@
 var badRequestUrl = 'https://api.github.com/unicorns';
 var redirectUrl = './404.html';
 
-fetch(badRequestUrl).then(function (response) {
+fetch(badRequestUrl)
+.then(function (response) {
   
   if (response.status === 404){
     setTimeout(function(){

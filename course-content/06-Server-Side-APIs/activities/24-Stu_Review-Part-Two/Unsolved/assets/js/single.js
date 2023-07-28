@@ -7,6 +7,7 @@ var getRepoName = function () {
   // TODO: Write your answer here
   var queryString = document.location.search;
   var repoName = queryString.split('=')[1];
+  // https://ourreponame.com/singlerepo?single_repo=nameofoutrepo
 
   if (repoName) {
     repoNameEl.textContent = repoName;
