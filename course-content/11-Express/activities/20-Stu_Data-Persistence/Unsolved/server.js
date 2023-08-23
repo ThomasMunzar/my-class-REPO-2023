@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 // Helper method for generating unique ids
 const uuid = require('./helpers/uuid');
+const e = require('express');
 
 const PORT = 3001;
 
@@ -43,7 +44,17 @@ app.post('/api/reviews', (req, res) => {
       username,
       review_id: uuid(),
     };
-
+// NEED TO ADD READFILE SO THAT NEW POST DONT OVER WRITE WHAT IS ALREADY IN DATA BASE
+    fs.readFile('./db/reviews.json', 'utf8', (err, data)=>{
+      if(err){
+        console.error(err);
+        
+      }else{
+        const parsedReviews =JSON.parse(data);
+        parsedReviews.push(newReview);
+        currentReviews.push(newReview);
+      }
+    })
     // Convert the data to a string so we can save it
     const reviewString = JSON.stringify(newReview);
 

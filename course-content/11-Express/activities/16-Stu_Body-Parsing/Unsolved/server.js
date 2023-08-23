@@ -7,7 +7,7 @@ const app = express();
 
 // TODO: Implement middleware for the parsing of JSON data
 app.use(express.json());
-app.use(express.urlencoded({extended: true})); // This line of code
+app.use(express.urlencoded({extended: true})); // This line of code parses url 
 // TODO: Implement middleware for parsing of URL encoded data
 
 // GET request for ALL reviews

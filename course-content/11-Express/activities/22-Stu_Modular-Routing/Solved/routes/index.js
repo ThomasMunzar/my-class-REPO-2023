@@ -12,3 +12,4 @@ miniApp.use('/tips', tipsRouter);//tarmac
 miniApp.use('/feedback', feedbackRouter);
 
 module.exports = miniApp;
+// exported to server.js

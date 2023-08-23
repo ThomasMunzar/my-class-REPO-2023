@@ -7,10 +7,14 @@ const PORT = 3001;
 
 const app = express();
 
+app.use(clog);// added this to the top of the middleware stack
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', api);
+
+
+
 
 app.use(express.static('public'));
 
@@ -27,3 +31,5 @@ app.get('/feedback', (req, res) =>
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
+
+

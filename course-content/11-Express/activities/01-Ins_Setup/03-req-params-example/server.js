@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Data
+// Data -- think of data as a API that contains info that we can create a route to.
 const characters = [
   {
     routeName: 'yoda',
@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
 
-// What does this route do?
+// What does this route do?- this will display a json list of all the characters in the character variable
 app.get('/api/characters/', (req, res) => {
   // /api/characters?t=moana
   console.log(req.query)
@@ -43,13 +43,13 @@ app.get('/api/characters/', (req, res) => {
   res.json(characters);
 });
 
-// What does this route do?
+// What does this route do? -- This route will take us to a SPECIFIC charcter in the array, if the chracter is not in array a "character not found" message will appear
 app.get('/api/characters/:character', (req, res) => {
   // What does this code do?
   const chosen = req.params.character;//{ character: 'yoda'}
   console.log(chosen);
 
-  // What does this code do? 
+  // What does this code do? -- This for loop itterates through the character list, IF character is in array then it will return as JSON, if not, error message.
   for (let i = 0; i < characters.length; i++) {
     const currentChar = characters[i];
     if (chosen === currentChar.routeName) {

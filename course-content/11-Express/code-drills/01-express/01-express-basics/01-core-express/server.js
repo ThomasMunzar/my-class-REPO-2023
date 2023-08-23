@@ -1,5 +1,7 @@
 // 1. Configure Server
-
+var express = require('express');
+const app = express();
+const PORT = 3000;
 //Expected Output: 
 // {
 //   jerome: 50,
@@ -11,14 +13,17 @@
 //   chicken: 68,
 //   sasha: 8
 // }
+
 var input = ["50 jerome.code.org", "30 ricky.code.com", "60 robert.chicken.com", "8 sasha.chicken.org"]
 
 function getNumVisits(arr) {
   // 2. ================= YOUR WORK HERE ==================
-  
-
-
-
+    var obj ={}
+    var domainsAndCount =[]
+    for(var i = 0; i < arr.length; i++){
+      domainsAndCount.push(arr[i].split(" "))
+    }
+    
 
 
 
