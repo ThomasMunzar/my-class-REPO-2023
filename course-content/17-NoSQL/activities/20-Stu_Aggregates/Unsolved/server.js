@@ -22,6 +22,7 @@ app.get('/sum-price', async (req, res) => {
   try {
     const result = await Book
       .aggregate([
+        {$match: {inStock: true}}, // added this line to only group what books are instock
         {
           $group: {
             _id: null,
@@ -29,6 +30,7 @@ app.get('/sum-price', async (req, res) => {
             avg_price: { $avg: '$price' },
             max_price: { $max: '$price' },
             min_price: { $min: '$price' },
+            
           },
         },
       ]);

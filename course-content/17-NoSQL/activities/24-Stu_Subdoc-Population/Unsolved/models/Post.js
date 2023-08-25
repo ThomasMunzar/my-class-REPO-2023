@@ -11,10 +11,11 @@ const postSchema = new Schema(
       type: Date,
       default: Date.now,
     },
+    // had to edit this tags:
     tags: [
       {
-        type: 'Tag',
-        ref: 'Tag',
+        type: Schema.Types.ObjectId, //Tag -> Schema.Types.ObjectId
+        ref: 'tag', // Tag -> tag
       },
     ],
     text: {

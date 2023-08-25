@@ -49,7 +49,7 @@ app.use(express.json());
 // TODO: Update route to use cursor methods
 app.get('/read', (req, res) => {
   db.collection('numberList')
-    .find()
+    .find() //similar to MySQL select*
     .sort({number: -1})
     .skip(5)
     .limit(5)

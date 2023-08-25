@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 // Schemas define the shape of the documents within the collection.
 const bookSchema = new mongoose.Schema({
   // Schemas define the properties of the document
-  title: { type: String, required: true },
+  title: { type: String, required: true, trim: true },
   author: String,
-  price: { type: Number, required: true },
+  price: { type: Number, required: true, },
 });
 
 // Extend methods object with custom method

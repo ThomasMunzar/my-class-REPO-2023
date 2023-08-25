@@ -3,13 +3,13 @@ const { Application, User } = require('../models');
 module.exports = {
   async getApplications(req, res) {
     try {
-      const applications = await Application.find();
+      const applications = await Application.find(); //find all applications
       res.json(applications);
     } catch (err) {
       res.status(500).json(err);
     }
   },
-  async getSingleApplication(req, res) {
+  async getSingleApplication(req, res) { //get single app
     try {
       const application = await Application.findOne({ _id: req.params.applicationId });
 
@@ -23,12 +23,14 @@ module.exports = {
     }
   },
   // TODO: Add comments to the functionality of the createApplication method
+  // creating application, add that application to user who made it
   async createApplication(req, res) {
     try {
       const application = await Application.create(req.body);
       const user = await User.findOneAndUpdate(
         { _id: req.body.userId },
         { $addToSet: { applications: application._id } },
+        // addtoset will make sure app does not already exist
         { new: true }
       );
 
@@ -50,7 +52,8 @@ module.exports = {
       const application = await Application.findOneAndUpdate(
         { _id: req.params.applicationId },
         { $set: req.body },
-        { runValidators: true, new: true }
+        { runValidators: true, new: true }//need this when you update in mongoose. need new true to send back the updated object
+        //runValidators---- Listen to our validators from out schema??
       );
 
       if (!application) {
@@ -74,7 +77,7 @@ module.exports = {
 
       const user = await User.findOneAndUpdate(
         { applications: req.params.applicationId },
-        { $pull: { applications: req.params.applicationId } },
+        { $pull: { applications: req.params.applicationId } }, //$pull removes something from an array
         { new: true }
       );
 
@@ -90,12 +93,13 @@ module.exports = {
     }
   },
   // TODO: Add comments to the functionality of the addTag method
+  // 
   async addTag(req, res) {
     try {
       const application = await Application.findOneAndUpdate(
         { _id: req.params.applicationId },
         { $addToSet: { tags: req.body } },
-        { runValidators: true, new: true }
+        { runValidators: true, new: true } // need when updating in mongoose
       );
 
       if (!application) {
